@@ -1,0 +1,25 @@
+{
+  "name": "express-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "busboy": "^0.3.1",
+    "connect-busboy": "0.0.2",
+    "express": "^4.16.4",
+    "express-busboy": "^8.0.0",
+    "nodemailer": "^5.1.1",
+    "nodemon": "^1.19.4",
+    "npm": "^6.8.0",
+    "rx-http-observable": "^1.0.0",
+    "rxjs": "^6.4.0",
+    "rxjs-compat": "^6.4.0",
+    "sendmail": "^1.4.1"
+  }
+}

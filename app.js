@@ -57,6 +57,13 @@ app.get('/ping', function (req, res) {
   res.send({ test: 'ping ok' });
 });
 
+
+//autenticacao datasul josso flex html
+app.post('/josso/signon/:auth', function (req, res) {
+  res.send({ "josso_session": 'josso_session:1234567' });
+});
+
+
 const port = 3001;
 app.listen(port, function () {
   console.log(`Example app listening on port ${port}!`);

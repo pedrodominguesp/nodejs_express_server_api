@@ -9,7 +9,7 @@
       "request": "launch",
       "port": 9229,
       "name": "Launch Program",
-      "program": "${workspaceFolder}/busboy.js",
+      "program": "${workspaceFolder}/app.js",
       "protocol": "inspector"
     }
   ]

@@ -26,19 +26,18 @@ app.listen(port, function () {
   showFiglet();
 });
 
-function showFiglet(){
+function showFiglet() {
   var figlet = require('figlet');
 
-  figlet('Mingle API Server', function(err, data) {
+  figlet('Mingle API Server', function (err, data) {
     if (err) {
-        console.log('Something went wrong in figlet...');
-        console.dir(err);
-        return;
+      console.log('Something went wrong in figlet...');
+      console.dir(err);
+      return;
     }
     console.log(data);
     listServerEndpoints();
-});
-
+  });
 }
 
 function listServerEndpoints() {

@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-router.all("*", function(req, res, next){
+router.all("*", function (req, res, next) {
     endpointLog(req.originalUrl, req.method);
     next();
 });

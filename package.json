@@ -11,8 +11,6 @@
   "dependencies": {
     "express": "^4.16.4",
     "figlet": "^1.5.2",
-    "nodemailer": "^5.1.1",
-    "nodemon": "^1.19.4",
-    "npm": "^6.8.0"
+    "nodemon": "^2.0.13"
   }
 }

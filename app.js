@@ -1,7 +1,7 @@
 const port = 3001;
 const express = require('express');
 const routes = require('./routes');
-const consoleStrings = require('./terminalStrings.json');
+const terminalStrings = require('./terminalStrings.json');
 
 var app = express();
 
@@ -14,9 +14,9 @@ app.use(function (req, res, next) {
 
 app.all('*', function (req, res, next) {
   // Log request headers in terminal
-  console.log(consoleStrings.requestHeaders);
+  console.log(terminalStrings.requestHeaders);
   console.log(req.headers);
-  console.log(consoleStrings.endLine);
+  console.log(terminalStrings.endLine);
   next();
 });
 app.use(routes);

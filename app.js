@@ -22,14 +22,14 @@ app.all('*', function (req, res, next) {
 app.use(routes);
 
 app.listen(port, function () {
-  console.log(`#### Mingle Api Server is live on ${port} ####`);
+  console.log(`#### Sample Node API is live on ${port} ####`);
   showFiglet();
 });
 
 function showFiglet() {
   var figlet = require('figlet');
 
-  figlet('Mingle API Server', function (err, data) {
+  figlet('Sample Node API', function (err, data) {
     if (err) {
       console.log('Something went wrong in figlet...');
       console.dir(err);
